@@ -1,9 +1,5 @@
 package com.msteam;
 
-import static java.lang.Boolean.FALSE;
-
-import java.util.stream.StreamSupport;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +21,8 @@ public class SampleCassandraProjectApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Iterable<User> users = repository.findAll();
-
-		StreamSupport.stream(users.spliterator(), FALSE)
-		.forEach(user -> LOGGER.info("{}", user));
+		repository.findAll()
+				.forEach(user -> LOGGER.info("{}", user));
 	}
-	
+
 }
