@@ -13,7 +13,7 @@ public class SampleCassandraProjectApplication implements CommandLineRunner {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SampleCassandraProjectApplication.class);
 
 	@Autowired
-	private UserRepository repository;
+	private UserRepository userRepository;
 
 	public static void main(String[] args) {
 		SpringApplication.run(SampleCassandraProjectApplication.class, args);
@@ -21,7 +21,7 @@ public class SampleCassandraProjectApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		repository.findAll()
+		userRepository.findAll()
 				.forEach(user -> LOGGER.info("{}", user));
 	}
 
