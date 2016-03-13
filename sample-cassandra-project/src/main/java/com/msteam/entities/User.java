@@ -1,4 +1,4 @@
-package com.msteam;
+package com.msteam.entities;
 
 import org.springframework.data.cassandra.mapping.Column;
 import org.springframework.data.cassandra.mapping.PrimaryKey;
