@@ -8,8 +8,8 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>sample-cassandra-project</name>
-	<description>Demo Cassandra project for MS Team</description>
+	<name>sample-cassandra-spring-boot-project</name>
+	<description>Spring Boot Demo Cassandra project for MS Team</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
