@@ -1,0 +1,16 @@
+{
+  "name"         : "sample-cassandra-nodejs-app",
+  "version"      : "0.0.1-SNAPSHOT",
+  "description"  : "Node.js Demo Cassandra app for MS Team",
+  "main"         : "server.js",
+  "author"       : "szogibalu",
+  "dependencies" : {
+    "cassandra-driver"    : "~3.0.0"  
+    },
+  "scripts": {
+ 
+    "prestart": "npm install",
+    "start": "node server.js"
+      
+  	}
+}

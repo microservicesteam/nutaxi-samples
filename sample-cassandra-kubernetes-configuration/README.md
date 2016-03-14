@@ -10,7 +10,7 @@
 ``` 
  
  - Setup [Cassandra cluster](https://github.com/kubernetes/kubernetes/tree/release-1.2/examples/cassandra)
- - Get the cluster's IP addresses with the following command
+ - Get the cluster's IP addresses with the following command:
  
   ```sh
 kubectl get endpoints cassandra -o yaml
