@@ -18,3 +18,9 @@ docker run \
         --cluster-dns=10.0.0.10 \
         --cluster-domain=cluster.local \
         --allow-privileged=true --v=2
+
+kubectl config set-cluster test-doc --server=http://localhost:8080
+
+kubectl config set-context test-doc --cluster=test-doc
+
+kubectl config use-context test-doc
