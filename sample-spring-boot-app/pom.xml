@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>01-hello-world-web</module>
+        <module>02-hello-world-actuator</module>
     </modules>
 
 
@@ -18,4 +19,13 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.3.3.RELEASE</version>
     </parent>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
