@@ -1,0 +1,3 @@
+[submodule "nutaxi-submodule"]
+	path = nutaxi-submodule
+	url = https://github.com/microservicesteam/nutaxi-submodule
