@@ -11,7 +11,8 @@
     <modules>
         <module>01-hello-world-web</module>
         <module>02-hello-world-actuator</module>
-        <module>02-hello-world-actuator-admin</module>
+        <module>03-hello-world-actuator-admin</module>
+        <module>03-hello-world-actuator-client</module>
     </modules>
 
 
