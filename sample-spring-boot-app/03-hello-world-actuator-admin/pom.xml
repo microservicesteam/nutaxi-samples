@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>02_1_hello-world-actuator-admin</artifactId>
+    <artifactId>03-hello-world-actuator-admin</artifactId>
 
     <dependencies>
         <dependency>
