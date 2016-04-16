@@ -2,5 +2,5 @@
 description = ''
 dependencies {
   compile project(':01-hello-world-web')
-  compile("org.springframework.boot:spring-boot-starter-web:1.3.3.RELEASE")
+  compile("org.springframework.boot:spring-boot-starter-actuator:1.3.3.RELEASE")
 }
