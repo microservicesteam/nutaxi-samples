@@ -3,8 +3,10 @@ include ':01-hello-world-web'
 include ':02-hello-world-actuator'
 include ':03-hello-world-actuator-admin'
 include ':03-hello-world-actuator-client'
+include ':04-hello-world-devtools'
 
 project(':01-hello-world-web').projectDir = "$rootDir/01-hello-world-web" as File
 project(':02-hello-world-actuator').projectDir = "$rootDir/02-hello-world-actuator" as File
 project(':03-hello-world-actuator-admin').projectDir = "$rootDir/03-hello-world-actuator-admin" as File
 project(':03-hello-world-actuator-client').projectDir = "$rootDir/03-hello-world-actuator-client" as File
+project(':04-hello-world-devtools').projectDir = "$rootDir/04-hello-world-devtools" as File

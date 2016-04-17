@@ -8,6 +8,7 @@ buildscript {
 }
 
 allprojects {
+    group 'com.msteam'
 }
 
 subprojects {
@@ -21,5 +22,9 @@ subprojects {
         jcenter()
         mavenLocal()
         mavenCentral()
+    }
+
+    bootRun {
+        addResources = true
     }
 }
