@@ -1,9 +1,10 @@
 package com.msteam.helloworld;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class HelloAutoController {
     private static final String NAME = "World";
     private final String greeting;
@@ -13,7 +14,9 @@ public class HelloAutoController {
     }
 
     @RequestMapping("/")
-    public String greet() {
-        return String.format("%s %s!", greeting, NAME);
+    public String greeting(Model model) {
+        model.addAttribute("greeting", greeting);
+        model.addAttribute("name", NAME);
+        return "hello";
     }
 }
