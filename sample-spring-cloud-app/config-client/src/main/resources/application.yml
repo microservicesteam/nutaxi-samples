@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: development
+  cloud:
+    config:
+      name: foo
+      profile: development
+      uri: http://localhost:8888
+  application:
+    name: foo
+server:
+  port: 8080
+    
+---
+
+spring:
+    profiles: development
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false

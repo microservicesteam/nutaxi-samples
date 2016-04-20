@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: development
+server:
+  port: 8888
+    
+---
+
+spring:
+    profiles: development
+endpoints:
+  shutdown:
+    enabled: true
+    sensitive: false
