@@ -24,7 +24,6 @@ public class NutaxiContractSampleClientApplicationTests {
         Route route = service.retrieveRoute(routeId);
 
         assertThat(route).isEqualTo(new Route(routeId, "Szeged", "Budapest"));
-
     }
 
 }
