@@ -1,16 +1,14 @@
 package com.microservicesteam;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
+import static com.jayway.restassured.module.mockmvc.RestAssuredMockMvc.standaloneSetup;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
+import org.junit.Before;
+
 public class NutaxiContractSampleServerApplicationTests {
 
-    @Test
-    public void contextLoads() {
+    @Before
+    public void setup() {
+        standaloneSetup(new RouteController());
     }
 
 }
