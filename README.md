@@ -1,3 +1,3 @@
 # nutaxi-samples
 
-Repository for samples, POCs, demos
+Samples, proof of concepts, demos for later development of nutaxi app
